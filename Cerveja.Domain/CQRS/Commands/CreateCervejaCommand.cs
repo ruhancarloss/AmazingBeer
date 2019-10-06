@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Cerveja.Domain.CQRS.Commands
+namespace AmazingBeer.Cerveja.Domain.CQRS.Commands
 {
-    public abstract class CreateCervejaCommand : CervejaCommands
+    public class CreateCervejaCommand : CervejaCommands
     {
+        public const string ConstQueueName = "create-cerveja-command-queue";
+        public override string QueueName { get => ConstQueueName; }
+
         public CreateCervejaCommand(CervejaAggregate.Cerveja cerveja)
+            : base(cerveja)
         {
-            this.QueueName = "create-cerveja-command-queue";
-            this.cerveja = cerveja;
         }
     }
 }

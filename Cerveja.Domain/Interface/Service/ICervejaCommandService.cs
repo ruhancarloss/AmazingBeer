@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Cerveja.Domain.Interface.Service
+namespace AmazingBeer.Cerveja.Domain.Interface.Service
 {
     public interface ICervejaCommandService
     {

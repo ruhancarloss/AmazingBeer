@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AmazingBeer.Cerveja.Domain.CervejaAggregate
+namespace AmazingBeer.Cerveja.Application.AppModel.DTO
 {
-    public class Cerveja
+    public class CervejaDTO
     {
         public Guid Id { get; set; }
         public string Nome { get; set; }

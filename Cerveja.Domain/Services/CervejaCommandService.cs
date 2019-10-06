@@ -1,10 +1,10 @@
-﻿using Cerveja.Domain.CervejaAggregate;
-using Cerveja.Domain.Interface.Service;
+﻿using AmazingBeer.Cerveja.Domain.CervejaAggregate;
+using AmazingBeer.Cerveja.Domain.Interface.Service;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Cerveja.Domain.Services
+namespace AmazingBeer.Cerveja.Domain.Services
 {
     public class CervejaCommandService
     {

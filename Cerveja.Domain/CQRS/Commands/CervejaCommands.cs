@@ -2,10 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Cerveja.Domain.CQRS.Commands
+namespace AmazingBeer.Cerveja.Domain.CQRS.Commands
 {
-    public abstract class CervejaCommands : QueueMessage
+    public abstract class CervejaCommands : Command
     {
-        public CervejaAggregate.Cerveja cerveja { get; protected set; }
+        public CervejaAggregate.Cerveja Cerveja { get; set; }
+
+        protected CervejaCommands(CervejaAggregate.Cerveja cerveja)
+        {
+            Cerveja = cerveja;
+        }
     }
 }

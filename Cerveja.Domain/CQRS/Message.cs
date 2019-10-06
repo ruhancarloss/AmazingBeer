@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Cerveja.Domain.CQRS
+namespace AmazingBeer.Cerveja.Domain.CQRS
 {
     public abstract class Message
     {

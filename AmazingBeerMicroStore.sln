@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.779
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cerveja", "Cerveja", "{651C8F08-BD92-4579-89A9-6A98A62B8DCB}"
 EndProject
@@ -9,7 +9,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cervejeiro", "Cervejeiro", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Checkin", "Checkin", "{77913263-CED8-45DD-917F-25350398294B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cerveja.Domain", "Cerveja.Domain\Cerveja.Domain.csproj", "{BD8552A5-6348-415B-98DD-93CCADE39DB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingBeer.Cerveja.Domain", "Cerveja.Domain\AmazingBeer.Cerveja.Domain.csproj", "{BD8552A5-6348-415B-98DD-93CCADE39DB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Service", "1 - Service", "{6815B23B-905F-49F4-9649-6928C0960434}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{9FE323A9-D8DE-4E8F-8286-E2BC36163825}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{CC1099F1-FAE5-462B-82AD-36F3A341AC46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{206B061E-84E8-422A-B5FE-3AE89A83514B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingBeer.Cerveja.Infrastructure", "AmazingBeer.Cerveja.Infrastructure\AmazingBeer.Cerveja.Infrastructure.csproj", "{A5B30D01-354E-4ECD-96AA-79D9EF81FB65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingBeer.Cerveja.Application", "AmazingBeer.Cerveja.Application\AmazingBeer.Cerveja.Application.csproj", "{7BC7C24A-41EC-4D82-ABF3-04C058AF145C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,12 +33,26 @@ Global
 		{BD8552A5-6348-415B-98DD-93CCADE39DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD8552A5-6348-415B-98DD-93CCADE39DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD8552A5-6348-415B-98DD-93CCADE39DB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5B30D01-354E-4ECD-96AA-79D9EF81FB65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5B30D01-354E-4ECD-96AA-79D9EF81FB65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5B30D01-354E-4ECD-96AA-79D9EF81FB65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5B30D01-354E-4ECD-96AA-79D9EF81FB65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BC7C24A-41EC-4D82-ABF3-04C058AF145C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BC7C24A-41EC-4D82-ABF3-04C058AF145C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BC7C24A-41EC-4D82-ABF3-04C058AF145C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BC7C24A-41EC-4D82-ABF3-04C058AF145C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{BD8552A5-6348-415B-98DD-93CCADE39DB7} = {651C8F08-BD92-4579-89A9-6A98A62B8DCB}
+		{BD8552A5-6348-415B-98DD-93CCADE39DB7} = {CC1099F1-FAE5-462B-82AD-36F3A341AC46}
+		{6815B23B-905F-49F4-9649-6928C0960434} = {651C8F08-BD92-4579-89A9-6A98A62B8DCB}
+		{9FE323A9-D8DE-4E8F-8286-E2BC36163825} = {651C8F08-BD92-4579-89A9-6A98A62B8DCB}
+		{CC1099F1-FAE5-462B-82AD-36F3A341AC46} = {651C8F08-BD92-4579-89A9-6A98A62B8DCB}
+		{206B061E-84E8-422A-B5FE-3AE89A83514B} = {651C8F08-BD92-4579-89A9-6A98A62B8DCB}
+		{A5B30D01-354E-4ECD-96AA-79D9EF81FB65} = {206B061E-84E8-422A-B5FE-3AE89A83514B}
+		{7BC7C24A-41EC-4D82-ABF3-04C058AF145C} = {9FE323A9-D8DE-4E8F-8286-E2BC36163825}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9FD4456B-4DC1-4949-8466-189AD1CA6982}

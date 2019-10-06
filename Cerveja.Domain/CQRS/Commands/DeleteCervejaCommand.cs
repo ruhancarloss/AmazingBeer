@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Cerveja.Domain.CQRS.Commands
+namespace AmazingBeer.Cerveja.Domain.CQRS.Commands
 {
-    public abstract class DeleteCervejaCommand : CervejaCommands
+    public class DeleteCervejaCommand : CervejaCommands
     {
+        public const string ConstQueueName = "delete-cerveja-command-queue";
+        public override string QueueName { get => ConstQueueName; }
+
         public DeleteCervejaCommand(CervejaAggregate.Cerveja cerveja)
+            : base(cerveja)
         {
-            this.QueueName = "delete-cerveja-command-queue";
-            this.cerveja = cerveja;
         }
     }
 }
