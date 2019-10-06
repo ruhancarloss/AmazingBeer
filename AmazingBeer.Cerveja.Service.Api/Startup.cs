@@ -41,7 +41,7 @@ namespace AmazingBeer.Cerveja.Service.Api
             services.AddScoped<ICervejaRepository, CervejaRepository>();
 
             //Service
-            services.AddScoped<ICervejaService, CervejaService>();
+            services.AddScoped<ICervejaQueryService, CervejaQueryService>();
 
             //AutoMapper
             services.AddAutoMapperSetup();

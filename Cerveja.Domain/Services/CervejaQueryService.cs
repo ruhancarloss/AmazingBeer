@@ -7,23 +7,13 @@ using System.Text;
 
 namespace AmazingBeer.Cerveja.Domain.Services
 {
-    public class CervejaService : ICervejaService
+    public class CervejaQueryService : ICervejaQueryService
     {
         private readonly ICervejaRepository _cervejaRepository;
 
-        public CervejaService(ICervejaRepository cervejaRepository)
+        public CervejaQueryService(ICervejaRepository cervejaRepository)
         {
             _cervejaRepository = cervejaRepository;
-        }
-
-        public void Create(CervejaAggregate.Cerveja cerveja)
-        {
-            _cervejaRepository.Create(cerveja);
-        }
-
-        public void Delete(Guid id)
-        {
-            _cervejaRepository.Delete(id);
         }
 
         public IEnumerable<CervejaAggregate.Cerveja> GetAllCervejas()
@@ -34,11 +24,6 @@ namespace AmazingBeer.Cerveja.Domain.Services
         public CervejaAggregate.Cerveja GetCerveja(Guid id)
         {
             return _cervejaRepository.Read(id);
-        }
-
-        public void Update(CervejaAggregate.Cerveja cerveja)
-        {
-            _cervejaRepository.Update(cerveja);
         }
     }
 }

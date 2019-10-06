@@ -16,7 +16,7 @@ namespace AmazingBeer.Cerveja.Console
         static void Main(string[] args)
         {
             _commandHandler = new CervejaCommandHandler(
-                new CervejaService(
+                new CervejaCommandService(
                     new CervejaRepository()
                 )
             );

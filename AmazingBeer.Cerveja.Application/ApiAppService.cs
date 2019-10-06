@@ -14,13 +14,13 @@ namespace AmazingBeer.Cerveja.Application
     {
         private readonly IQueue _queue;
         private readonly IMapper _mapper;
-        private readonly ICervejaService _cervejaService;
+        private readonly ICervejaQueryService _cervejaQueryService;
 
-        public ApiAppService(IMapper mapper, ICervejaService cervejaService)
+        public ApiAppService(IMapper mapper, ICervejaQueryService cervejaQueryService)
         {
             _queue = new RabbitMQueue();
             _mapper = mapper;
-            _cervejaService = cervejaService;
+            _cervejaQueryService = cervejaQueryService;
         }
 
         //====== COMMANDS ======
@@ -44,14 +44,14 @@ namespace AmazingBeer.Cerveja.Application
 
         public CervejaDTO ReadCerveja(Guid id)
         {
-            var Cerveja = _cervejaService.GetCerveja(id);
+            var Cerveja = _cervejaQueryService.GetCerveja(id);
             var CervejaDTO = _mapper.Map<CervejaDTO>(Cerveja);
             return CervejaDTO;
         }
 
         public IEnumerable<CervejaDTO> GetAllCervejas()
         {
-            var Cervejas = _cervejaService.GetAllCervejas();
+            var Cervejas = _cervejaQueryService.GetAllCervejas();
             return _mapper.Map<IEnumerable<CervejaDTO>>(Cervejas);
         }
         //=====================
