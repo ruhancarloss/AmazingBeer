@@ -8,31 +8,26 @@ namespace AmazingBeer.Cerveja.Domain.CQRS.CommandHandlers
 {
     public class CervejaCommandHandler
     {
-        private readonly ICervejaCommandService _cervejaCommandService;
-        private readonly ICervejaQueryService _cervejaQueryService;
+        private readonly ICervejaService _cervejaService;
 
-        public CervejaCommandHandler(ICervejaCommandService CervejaCommandService, ICervejaQueryService CervejaQueryService)
+        public CervejaCommandHandler(ICervejaService cervejaService)
         {
-            _cervejaCommandService = CervejaCommandService;
-            _cervejaQueryService = CervejaQueryService;
+            _cervejaService = cervejaService;
         }
 
         public void Handle(CreateCervejaCommand command)
         {
-            _cervejaCommandService.Create(command.Cerveja);
-            _cervejaCommandService.SaveChanges();
+            _cervejaService.Create(command.Cerveja);
         }
 
         public void Handle(UpdateCervejaCommand command)
         {
-            _cervejaCommandService.Update(command.Cerveja);
-            _cervejaCommandService.SaveChanges();
+            _cervejaService.Update(command.Cerveja);
         }
 
         public void Handle(DeleteCervejaCommand command)
         {
-            _cervejaCommandService.Delete(command.Cerveja.Id);
-            _cervejaCommandService.SaveChanges();
+            _cervejaService.Delete(command.Cerveja.Id);
         }
     }
 }

@@ -121,6 +121,6 @@
     <value>DefaultEndpointsProtocol=https;AccountName=amazingmicrostorestorage;AccountKey=aAurZYffxietGQGd803bxITvv2JGNw2SNDy9uGLA6M6neYy+6PEYh8Fa+4yMoNcGMCpJQwQuEvJGRQ/dC3ExaQ==;EndpointSuffix=core.windows.net</value>
   </data>
   <data name="DbConnectionString" xml:space="preserve">
-    <value>Server=tcp:productmicroservice-db-server.database.windows.net,1433;Initial Catalog=amazingmicrostore-product-microservice-db;Persist Security Info=False;User ID=ale;Password=@dsInf123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;</value>
+    <value>Data source=DESKTOP-KC576SP\SQLEXPRESS;Initial Catalog=beer;Integrated Security=True;Connection Timeout=30;</value>
   </data>
 </root>

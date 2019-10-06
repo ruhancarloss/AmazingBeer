@@ -11,31 +11,31 @@ namespace AmazingBeer.Cerveja.Infrastructure.DataAccess.Repositories.EFCore
     {
         private readonly CervejaContext _context;
 
-        public CervejaRepository(CervejaContext context)
+        public CervejaRepository()
         {
-            _context = context;
+            _context = new CervejaContext();
         }
 
         public void Create(Domain.CervejaAggregate.Cerveja cerveja)
         {
-            _context.Cervejas.Add(cerveja);
+            _context.Cerveja.Add(cerveja);
             _context.SaveChanges();
         }
 
         public void Delete(Guid id)
         {
-            _context.Cervejas.Remove(Read(id));
+            _context.Cerveja.Remove(Read(id));
             _context.SaveChanges();
         }
 
         public Domain.CervejaAggregate.Cerveja Read(Guid id)
         {
-            return _context.Cervejas.Find(id);
+            return _context.Cerveja.Find(id);
         }
 
         public IEnumerable<Domain.CervejaAggregate.Cerveja> ReadAll()
         {
-            return _context.Cervejas;
+            return _context.Cerveja;
         }
 
         public void Update(Domain.CervejaAggregate.Cerveja cerveja)

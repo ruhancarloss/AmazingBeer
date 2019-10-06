@@ -4,12 +4,12 @@ using System.Text;
 
 namespace AmazingBeer.Cerveja.Domain.Interface.Service
 {
-    public interface ICervejaCommandService
+    public interface ICervejaService
     {
+        IEnumerable<CervejaAggregate.Cerveja> GetAllCervejas();
+        CervejaAggregate.Cerveja GetCerveja(Guid id);
         void Create(CervejaAggregate.Cerveja catalogProduct);
         void Update(CervejaAggregate.Cerveja catalogProduct);
         void Delete(Guid id);
-        void SaveChanges();
-        //Task SaveChangesAsync();
     }
 }

@@ -9,7 +9,7 @@ namespace AmazingBeer.Cerveja.Infrastructure.DataAccess.Contexts
 {
     public class CervejaContext : DbContext
     {
-        public DbSet<AmazingBeer.Cerveja.Domain.CervejaAggregate.Cerveja> Cervejas { get; set; }
+        public DbSet<AmazingBeer.Cerveja.Domain.CervejaAggregate.Cerveja> Cerveja { get; set; }
 
         public CervejaContext()
         {

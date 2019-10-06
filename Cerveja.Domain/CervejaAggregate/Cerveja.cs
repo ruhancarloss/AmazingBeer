@@ -10,8 +10,8 @@ namespace AmazingBeer.Cerveja.Domain.CervejaAggregate
         public string Nome { get; set; }
         public string Tipo { get; set; }
         public string Descricao { get; set; }
-        public float ABV { get; set; } // quantidade alcóolica
-        public float IBU { get; set; } // nível de amargor
-        public double Avaliacao { get; set; }
+        public decimal? ABV { get; set; } // quantidade alcóolica
+        public decimal? IBU { get; set; } // nível de amargor
+        public decimal? Avaliacao { get; set; }
     }
 }

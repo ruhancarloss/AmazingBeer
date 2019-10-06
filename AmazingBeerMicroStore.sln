@@ -19,9 +19,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{206B061E-84E8-422A-B5FE-3AE89A83514B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingBeer.Cerveja.Infrastructure", "AmazingBeer.Cerveja.Infrastructure\AmazingBeer.Cerveja.Infrastructure.csproj", "{A5B30D01-354E-4ECD-96AA-79D9EF81FB65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingBeer.Cerveja.Infrastructure", "AmazingBeer.Cerveja.Infrastructure\AmazingBeer.Cerveja.Infrastructure.csproj", "{A5B30D01-354E-4ECD-96AA-79D9EF81FB65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingBeer.Cerveja.Application", "AmazingBeer.Cerveja.Application\AmazingBeer.Cerveja.Application.csproj", "{7BC7C24A-41EC-4D82-ABF3-04C058AF145C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingBeer.Cerveja.Application", "AmazingBeer.Cerveja.Application\AmazingBeer.Cerveja.Application.csproj", "{7BC7C24A-41EC-4D82-ABF3-04C058AF145C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingBeer.Cerveja.Service.Api", "AmazingBeer.Cerveja.Service.Api\AmazingBeer.Cerveja.Service.Api.csproj", "{8EB9A2CB-C689-4DF2-91CC-D009978AEF0F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{F83268B4-046D-47C1-8468-381E86647934}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingBeer.Cerveja.Console", "AmazingBeer.Cerveja.Console\AmazingBeer.Cerveja.Console.csproj", "{38094AC9-B43C-4548-9782-589B81855626}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingBeer.Cerveja.Presentation", "AmazingBeer.Cerveja.Presentation\AmazingBeer.Cerveja.Presentation.csproj", "{8DAF960F-8A16-4F2A-A531-930D2980395A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +49,18 @@ Global
 		{7BC7C24A-41EC-4D82-ABF3-04C058AF145C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BC7C24A-41EC-4D82-ABF3-04C058AF145C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BC7C24A-41EC-4D82-ABF3-04C058AF145C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EB9A2CB-C689-4DF2-91CC-D009978AEF0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EB9A2CB-C689-4DF2-91CC-D009978AEF0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EB9A2CB-C689-4DF2-91CC-D009978AEF0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EB9A2CB-C689-4DF2-91CC-D009978AEF0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38094AC9-B43C-4548-9782-589B81855626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38094AC9-B43C-4548-9782-589B81855626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38094AC9-B43C-4548-9782-589B81855626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38094AC9-B43C-4548-9782-589B81855626}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DAF960F-8A16-4F2A-A531-930D2980395A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DAF960F-8A16-4F2A-A531-930D2980395A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DAF960F-8A16-4F2A-A531-930D2980395A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DAF960F-8A16-4F2A-A531-930D2980395A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +73,10 @@ Global
 		{206B061E-84E8-422A-B5FE-3AE89A83514B} = {651C8F08-BD92-4579-89A9-6A98A62B8DCB}
 		{A5B30D01-354E-4ECD-96AA-79D9EF81FB65} = {206B061E-84E8-422A-B5FE-3AE89A83514B}
 		{7BC7C24A-41EC-4D82-ABF3-04C058AF145C} = {9FE323A9-D8DE-4E8F-8286-E2BC36163825}
+		{8EB9A2CB-C689-4DF2-91CC-D009978AEF0F} = {6815B23B-905F-49F4-9649-6928C0960434}
+		{F83268B4-046D-47C1-8468-381E86647934} = {651C8F08-BD92-4579-89A9-6A98A62B8DCB}
+		{38094AC9-B43C-4548-9782-589B81855626} = {6815B23B-905F-49F4-9649-6928C0960434}
+		{8DAF960F-8A16-4F2A-A531-930D2980395A} = {F83268B4-046D-47C1-8468-381E86647934}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9FD4456B-4DC1-4949-8466-189AD1CA6982}
